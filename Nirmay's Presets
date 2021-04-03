@@ -1,0 +1,89 @@
+[
+  { 
+    "type": "brightnessDown", 
+    "width": 32, 
+    "bordered": false, 
+    "align": "left" 
+  },
+  
+  { 
+    "type": "brightnessUp", 
+    "width": 32, 
+    "bordered": false, 
+    "align": "left" 
+  },
+
+  {
+    "type": "pomodoro",
+    "align": "left",
+    "bordered": false,
+    "workTime": 1500, // set time work in seconds. Default 1500 (25 min)
+    "restTime": 600 // set time rest in seconds. Default 300 (5 min)
+  },
+  
+ {
+    "type": "weather",
+    "align": "left",
+    "api_key": "a8bf32b23f4b0cb10c14f8ade9d27109",
+    "bordered": false,
+    "refreshInterval": 3600, // in seconds
+    "units": "metric", // or imperial
+    "icon_type": "text"
+  },
+
+  {
+    "type": "upnext",
+    "align": "left",
+    "from": 0,
+    "to": 12,
+    "maxToShow": 10,
+    "autoResize": false,
+    "width": 150,
+    "bordered": true
+  },
+  
+  { 
+    "type": "dock", 
+    "align": "left", 
+    "width": 250 
+  },
+  
+  {
+    "type": "volumeDown",
+    "bordered": false,
+    "align": "right",
+    "width": 28
+  },
+  
+  {
+    "type": "volumeUp",
+    "bordered": false,
+    "align": "right",
+    "width": 28
+  },
+  
+  {
+    "type": "play",
+    "align": "right",
+    "width": 38,
+    "bordered": false
+  },
+  
+  {
+    "type": "battery",
+    "align": "right",
+    "bordered": false,
+    "remainingtime": true,
+    "width": 30
+  },
+  
+  {
+    "type": "timeButton",
+    "formatTemplate": "HH:mm",
+    "align": "right",
+    "bordered": false,
+    "longAction": "shellScript",
+    "longExecutablePath": "/usr/bin/pmset",
+    "longShellArguments": ["sleepnow"]
+  }
+]
